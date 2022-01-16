@@ -1,0 +1,111 @@
+.vl {
+    border-left: 2px solid white;
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:absolute;
+    left: 94.5%;
+    top: 0;
+}
+.WorksLink{
+    font-family: ThinFont;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: white;
+    left: 95%;
+    position: absolute;
+    font-size: 20pt;
+    top: 40px;
+}
+.AboutLink{
+    font-family: ThinFont;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: white;
+    left: 95%;
+    position:absolute;
+    font-size: 20pt;
+    top: 150px;
+}
+.ContactLink{
+    font-family: ThinFont;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: white;
+    left: 95%;
+    position: absolute;
+    font-size: 20pt;
+    top: 260px;
+}
+a {
+    color: white;
+    text-decoration: none;
+  }
+
+
+a:hover {color: #EE4B2B; }
+
+
+
+@font-face {
+    font-family: ThinFont;
+    src: url(JosefinSans-Thin.ttf);
+  }
+  
+    div {
+    font-family: ThinFont;
+  }
+
+
+.flip-card {
+    border-radius: 20px;
+    background-color: transparent;
+    width: 280px;
+    height: 400px;
+    perspective: 1000px; 
+    margin-top: -210px;
+    margin-left: 140px;
+  }
+  
+  
+  .flip-card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 20px;
+  }
+  
+
+  .flip-card-back {
+    border-radius: 20px;
+    background-color: white;
+    transform: rotateY(180deg);
+  }
+
+
+  .container {
+    width: 1000px;
+   }
+
+
+   body{ cursor: url('cursor\ \(3\).cur'), auto;}
